@@ -1,0 +1,25 @@
+# SearchSectionsRequest
+
+## Example Usage
+
+```typescript
+import { SearchSectionsRequest } from "qti/models/operations";
+
+let value: SearchSectionsRequest = {
+  assessmentTestIdentifier: "<value>",
+  testPartIdentifier: "<value>",
+  sort: "createdAt",
+};
+```
+
+## Fields
+
+| Field                                                                                                | Type                                                                                                 | Required                                                                                             | Description                                                                                          | Example                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `assessmentTestIdentifier`                                                                           | *string*                                                                                             | :heavy_check_mark:                                                                                   | Root assessment test identifier                                                                      |                                                                                                      |
+| `testPartIdentifier`                                                                                 | *string*                                                                                             | :heavy_check_mark:                                                                                   | Parent test part identifier                                                                          |                                                                                                      |
+| `query`                                                                                              | *string*                                                                                             | :heavy_minus_sign:                                                                                   | Search title and identifier fields using a search term. This is a fuzzy search.                      |                                                                                                      |
+| `page`                                                                                               | *string*                                                                                             | :heavy_minus_sign:                                                                                   | Page number for pagination                                                                           | 1                                                                                                    |
+| `limit`                                                                                              | *string*                                                                                             | :heavy_minus_sign:                                                                                   | Number of items per page                                                                             | 10                                                                                                   |
+| `sort`                                                                                               | [operations.SearchSectionsSort](../../models/operations/searchsectionssort.md)                       | :heavy_minus_sign:                                                                                   | Field to sort by                                                                                     | createdAt                                                                                            |
+| `order`                                                                                              | [operations.SearchSectionsQueryParamOrder](../../models/operations/searchsectionsqueryparamorder.md) | :heavy_minus_sign:                                                                                   | Sort order                                                                                           | desc                                                                                                 |

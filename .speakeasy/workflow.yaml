@@ -1,0 +1,19 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    QTI API:
+        inputs:
+            - location: ../qti.yaml
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/emu-farm/timeback/qti-api
+targets:
+    qti:
+        target: typescript
+        source: QTI API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/emu-farm/timeback/qti-api-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false

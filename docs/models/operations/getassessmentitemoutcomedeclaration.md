@@ -1,0 +1,20 @@
+# GetAssessmentItemOutcomeDeclaration
+
+## Example Usage
+
+```typescript
+import { GetAssessmentItemOutcomeDeclaration } from "qti/models/operations";
+
+let value: GetAssessmentItemOutcomeDeclaration = {
+  identifier: "<value>",
+  cardinality: "single",
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                                                 | Type                                                                                                                                                                                  | Required                                                                                                                                                                              | Description                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `identifier`                                                                                                                                                                          | *string*                                                                                                                                                                              | :heavy_check_mark:                                                                                                                                                                    | Unique identifier for this response variable within the item; must be distinct from other item variables and cannot use reserved names (completionStatus, numAttempts, duration).     |
+| `cardinality`                                                                                                                                                                         | [operations.GetAssessmentItemOutcomeDeclarationCardinality](../../models/operations/getassessmentitemoutcomedeclarationcardinality.md)                                                | :heavy_check_mark:                                                                                                                                                                    | Specifies how many values the response variable can hold and whether order matters.                                                                                                   |
+| `baseType`                                                                                                                                                                            | [operations.GetAssessmentItemOutcomeDeclarationBaseType](../../models/operations/getassessmentitemoutcomedeclarationbasetype.md)                                                      | :heavy_minus_sign:                                                                                                                                                                    | Primitive data type for each answer stored in the variable (e.g., integer, string, boolean). Omit when cardinality is 'record', because each field in a record may have its own type. |

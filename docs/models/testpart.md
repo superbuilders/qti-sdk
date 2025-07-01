@@ -1,0 +1,30 @@
+# TestPart
+
+Complete test part structure as parsed from XML.
+
+## Example Usage
+
+```typescript
+import { TestPart } from "qti";
+
+let value: TestPart = {
+  identifier: "<value>",
+  navigationMode: "nonlinear",
+  submissionMode: "individual",
+  qtiAssessmentSection: [
+    {
+      identifier: "<value>",
+      title: "<value>",
+    },
+  ],
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                                                                                                          | Type                                                                                                                                                                                                                                           | Required                                                                                                                                                                                                                                       | Description                                                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `identifier`                                                                                                                                                                                                                                   | *string*                                                                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                             | Unique identifier for the entity on the service provider.                                                                                                                                                                                      |
+| `navigationMode`                                                                                                                                                                                                                               | [models.NavigationMode](../models/navigationmode.md)                                                                                                                                                                                           | :heavy_check_mark:                                                                                                                                                                                                                             | Controls how learners navigate through the test part. 'linear' requires items to be responded to in sequence without jumping around, while 'nonlinear' allows candidates to respond to items in any order they choose.                         |
+| `submissionMode`                                                                                                                                                                                                                               | [models.SubmissionMode](../models/submissionmode.md)                                                                                                                                                                                           | :heavy_check_mark:                                                                                                                                                                                                                             | Determines how learner responses are submitted for response processing. 'individual' allows responses to be submitted as each item is completed, while 'simultaneous' means responses for all items are sent when the whole part is completed. |
+| `qtiAssessmentSection`                                                                                                                                                                                                                         | [models.Section](../models/section.md)[]                                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                             | N/A                                                                                                                                                                                                                                            |

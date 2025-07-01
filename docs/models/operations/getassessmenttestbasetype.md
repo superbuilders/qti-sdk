@@ -1,0 +1,17 @@
+# GetAssessmentTestBaseType
+
+Data type of the outcome variable, determining how values are stored and processed
+
+## Example Usage
+
+```typescript
+import { GetAssessmentTestBaseType } from "qti/models/operations";
+
+let value: GetAssessmentTestBaseType = "file";
+```
+
+## Values
+
+```typescript
+"identifier" | "boolean" | "integer" | "float" | "string" | "point" | "pair" | "directedPair" | "duration" | "file" | "uri"
+```

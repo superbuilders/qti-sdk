@@ -1,0 +1,28 @@
+# CreateAssessmentItemFeedbackInline
+
+## Example Usage
+
+```typescript
+import { CreateAssessmentItemFeedbackInline } from "qti/models/operations";
+
+let value: CreateAssessmentItemFeedbackInline = {
+  outcomeIdentifier: "<value>",
+  identifier: "<value>",
+  showHide: "show",
+  content: "<value>",
+  class: [
+    "<value 1>",
+    "<value 2>",
+  ],
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                                                    | Type                                                                                                                                                                                     | Required                                                                                                                                                                                 | Description                                                                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `outcomeIdentifier`                                                                                                                                                                      | *string*                                                                                                                                                                                 | :heavy_check_mark:                                                                                                                                                                       | Identifier of the outcome variable that controls when this feedback is displayed. The feedback is shown or hidden based on the value of this outcome variable after response processing. |
+| `identifier`                                                                                                                                                                             | *string*                                                                                                                                                                                 | :heavy_check_mark:                                                                                                                                                                       | Unique identifier for this specific feedback element within the assessment item. Used to reference and control this particular piece of feedback.                                        |
+| `showHide`                                                                                                                                                                               | [operations.CreateAssessmentItemFeedbackInlineShowHide](../../models/operations/createassessmentitemfeedbackinlineshowhide.md)                                                           | :heavy_check_mark:                                                                                                                                                                       | Determines the feedback visibility behavior. 'show' displays the feedback when the outcome variable matches the identifier, 'hide' conceals it when the outcome variable matches.        |
+| `content`                                                                                                                                                                                | *string*                                                                                                                                                                                 | :heavy_check_mark:                                                                                                                                                                       | The HTML or text content to be displayed as feedback to the candidate.                                                                                                                   |
+| `class`                                                                                                                                                                                  | *string*[]                                                                                                                                                                               | :heavy_check_mark:                                                                                                                                                                       | CSS class names applied to the feedback element for styling purposes. Multiple classes can be specified for flexible presentation control.                                               |

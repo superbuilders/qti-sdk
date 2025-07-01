@@ -1,0 +1,31 @@
+# GetAssessmentTestQtiTestPart
+
+Complete test part data returned from the service provider. Contains all sections and their configuration.
+
+## Example Usage
+
+```typescript
+import { GetAssessmentTestQtiTestPart } from "qti/models/operations";
+
+let value: GetAssessmentTestQtiTestPart = {
+  identifier: "<value>",
+  navigationMode: "linear",
+  submissionMode: "simultaneous",
+  qtiAssessmentSection: [
+    {
+      id: "<id>",
+      identifier: "<value>",
+      title: "<value>",
+    },
+  ],
+};
+```
+
+## Fields
+
+| Field                                                                                                                                                                                                                                          | Type                                                                                                                                                                                                                                           | Required                                                                                                                                                                                                                                       | Description                                                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `identifier`                                                                                                                                                                                                                                   | *string*                                                                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                             | Unique identifier for the entity on the service provider.                                                                                                                                                                                      |
+| `navigationMode`                                                                                                                                                                                                                               | [operations.GetAssessmentTestNavigationMode](../../models/operations/getassessmenttestnavigationmode.md)                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                             | Controls how learners navigate through the test part. 'linear' requires items to be responded to in sequence without jumping around, while 'nonlinear' allows candidates to respond to items in any order they choose.                         |
+| `submissionMode`                                                                                                                                                                                                                               | [operations.GetAssessmentTestSubmissionMode](../../models/operations/getassessmenttestsubmissionmode.md)                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                             | Determines how learner responses are submitted for response processing. 'individual' allows responses to be submitted as each item is completed, while 'simultaneous' means responses for all items are sent when the whole part is completed. |
+| `qtiAssessmentSection`                                                                                                                                                                                                                         | [operations.GetAssessmentTestQtiAssessmentSection](../../models/operations/getassessmenttestqtiassessmentsection.md)[]                                                                                                                         | :heavy_check_mark:                                                                                                                                                                                                                             | N/A                                                                                                                                                                                                                                            |
