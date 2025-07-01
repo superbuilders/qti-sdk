@@ -1,8 +1,27 @@
 {
-  "name": "qti",
+  "name": "@superbuilders/qti",
   "version": "0.0.1",
-  "author": "Speakeasy",
+  "description": "TypeScript SDK for QTI (Question and Test Interoperability) API",
+  "author": "Superbuilders",
+  "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superbuilders/qti-sdk.git"
+  },
+  "homepage": "https://github.com/superbuilders/qti-sdk",
+  "bugs": {
+    "url": "https://github.com/superbuilders/qti-sdk/issues"
+  },
+  "keywords": [
+    "qti",
+    "assessment",
+    "typescript",
+    "sdk",
+    "api",
+    "education",
+    "testing"
+  ],
   "bin": {
     "mcp": "bin/mcp-server.js"
   },

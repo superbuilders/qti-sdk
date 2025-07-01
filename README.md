@@ -3,6 +3,8 @@
 Developer-friendly & type-safe Typescript SDK specifically catered to leverage *qti* API.
 
 <div align="left">
+    <a href="https://www.npmjs.com/package/@superbuilders/qti"><img src="https://img.shields.io/npm/v/@superbuilders/qti?style=for-the-badge&logo=npm&logoColor=white" /></a>
+    <a href="https://www.npmjs.com/package/@superbuilders/qti"><img src="https://img.shields.io/npm/dt/@superbuilders/qti?style=for-the-badge&logo=npm&logoColor=white" /></a>
     <a href="https://www.speakeasy.com/?utm_source=qti&utm_campaign=typescript"><img src="https://custom-icon-badges.demolab.com/badge/-Built%20By%20Speakeasy-212015?style=for-the-badge&logoColor=FBE331&logo=speakeasy&labelColor=545454" /></a>
     <a href="https://opensource.org/licenses/MIT">
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" style="width: 100px; height: 28px;" />
